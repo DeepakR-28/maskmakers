@@ -1,0 +1,35 @@
+body {
+  background-color: tomato;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-area: auto;
+  grid-template-columns: auto auto auto;
+  padding: 10px 50px 10px 10px;
+}
+.grid-item {
+  background-color: yellow;
+  text-align: center;
+  padding: 50px;
+  transition: transform 1s;
+}
+.grid-item:hover {
+  transform: scale(1.25);
+}
+body.grid-item:hover {
+  background-color: #fff;
+}
+
+@media (min-width: 600px) {
+  .grid-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

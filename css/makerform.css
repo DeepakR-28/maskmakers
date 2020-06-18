@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #1abc9c;
+}
+.container {
+    background-color: #16a085;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(8, 11, 12, 0.4);
+}
+
+label {
+    padding: 1px 12px 12px 0px;
+    display: inline-table;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+}
+
+input [type="text"] {
+    padding: 12px 0px 12px 12px;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.row:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 5px;
+    padding-left: 0px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.button {
+    background-color: #81ecec;
+    border-radius: 5px;
+    border-style: none;
+    float: center;
+    padding: 7px;
+    transition: transform 0.8s;
+}
+
+.button:hover {
+    background-color: #0984e3;
+    transform: scale(1.1);
+}
+
+h2 {
+    font-family: "Noto Sans HK", sans-serif;
+    color: #f1f2f6;
+    position: sticky;
+    top: 0px;
+}

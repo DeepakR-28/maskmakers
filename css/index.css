@@ -1,0 +1,52 @@
+body {
+  background-color: #34495e;
+}
+
+.button {
+  background-color: crimson;
+  box-shadow: 0 4px 8px 0 rgba(110, 126, 186, 0.2);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Acme", sans-serif;
+  transition: transform 0.8s;
+}
+button:hover {
+  box-shadow: 0 4px 8px 0 rgba(8, 11, 12, 0.4);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #7f8c8d;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  height: 40px;
+  text-align: center;
+  color: azure;
+  font-family: monospace;
+}
+
+.position {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+}
+
+.brand {
+  color: ivory;
+  font-family: "Acme", sans-serif;
+  font-size: xx-large;
+  transition: transform 0.2s;
+  width: 0%;
+}
+.brand:hover {
+  transform: scale(1.01);
+}
