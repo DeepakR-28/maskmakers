@@ -1,5 +1,25 @@
 body {
-  background-color: tomato;
+  background-color: #d2dae2;
+}
+h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 60px;
+  color: #ff5e57;
+  text-decoration: underline;
+}
+i {
+  color: #ff3f34;
+}
+.centerhead {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  grid-gap: 20%;
+}
+.centerheadchild {
+  padding: 10px;
+  /* align-items: center; */
+  justify-content: center;
+  align-content: center;
 }
 
 .grid-container {
@@ -7,19 +27,32 @@ body {
   grid-gap: 20px;
   grid-area: auto;
   grid-template-columns: auto auto auto;
-  padding: 10px 50px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 .grid-item {
-  background-color: yellow;
-  text-align: center;
+  background-color: #ecf0f1;
+
   padding: 50px;
-  transition: transform 1s;
+  transition: transform 0.6s;
+  border-radius: 8px;
+}
+a {
+  text-decoration: none;
+  color: #ff3f34;
+}
+a:hover {
+  color: #0be881;
+}
+a:active {
+  color: #3c40c6;
 }
 .grid-item:hover {
-  transform: scale(1.25);
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px 0 rgba(110, 126, 186, 0.8);
 }
 body.grid-item:hover {
   background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(110, 126, 186, 0.2);
 }
 
 @media (min-width: 600px) {
